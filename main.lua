@@ -54,7 +54,7 @@ function love.run()
         if love.update then love.update(dt) end -- will pass 0 if love.timer is disabled
         Scene.update(dt) -- update current scene, if any
 
-        if love.window and love.graphics and love.window.isCreated() then
+        if love.window and love.graphics then
             love.graphics.clear()
             love.graphics.origin()
             if love.draw then love.draw() end
